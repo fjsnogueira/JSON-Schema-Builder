@@ -10,11 +10,11 @@ function jsonSchemaDataService($http) {
     var config = {};
 
     function upload(data) {
-        return $http.post('http://localhost:8000/upload', data, config);
+        return $http.post('http://localhost:8000/schema/update', data, config);
     }
 
     function download(data) {
-        return $http.get('http://localhost:8000/download', data);
+        return $http.get('http://localhost:8000/schema', data);
     }
 
     return {
@@ -45,7 +45,10 @@ function jsonSchemaDirective(jsonSchemaDataService) {
             }
 
             $scope.getSchema = function () {
-                jsonSchemaDataService.download().then(function () {
+                jsonSchemaDataService.download().then(function (res) {
+                    $scope.$data = res.data.entity;
+                    $scope.$data.$root$ = true;
+                    $scope.entity = $scope.$data;
                     $scope.convertObj2Schema();
                     console.log("success to upload schema definitions");
                 }, function() {

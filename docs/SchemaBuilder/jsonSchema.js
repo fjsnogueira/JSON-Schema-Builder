@@ -2,10 +2,29 @@
 
 angular.module('json-schema', [])
         .directive('jsonSchema', jsonSchemaDirective)
-        .directive('modelTypeSelector', modelTypeSelectorDirective);
+        .directive('modelTypeSelector', modelTypeSelectorDirective)
+        .factory('jsonSchemaDataService', jsonSchemaDataService);
 
-jsonSchemaDirective.$inject = [];
-function jsonSchemaDirective() {
+jsonSchemaDataService.$inject = ["$http"];
+function jsonSchemaDataService($http) {
+    var config = {};
+
+    function upload(data) {
+        return $http.post('http://localhost:8000/upload', data, config);
+    }
+
+    function download(data) {
+        return $http.get('http://localhost:8000/download', data);
+    }
+
+    return {
+        upload   : upload,
+        download : download
+    }
+}
+
+jsonSchemaDirective.$inject = ['jsonSchemaDataService'];
+function jsonSchemaDirective(jsonSchemaDataService) {
     return{
         restrict: 'A',
         scope: {
@@ -13,7 +32,29 @@ function jsonSchemaDirective() {
         templateUrl: 'SchemaBuilder/jsonSchema.html',
         link: function ($scope, ele, attr, model) {
 
+            $scope.updateSchema = function (schema) {
+                var payload = {
+                    entity : $scope.$data,
+                    schema : schema
+                }
+                jsonSchemaDataService.upload(payload).then(function () {
+                    console.log("success to upload schema definitions");
+                }, function() {
+                    console.log("failed to upload schema definitions");
+                });
+            }
+
+            $scope.getSchema = function () {
+                jsonSchemaDataService.download().then(function () {
+                    $scope.convertObj2Schema();
+                    console.log("success to upload schema definitions");
+                }, function() {
+                    console.log("failed to download schema definitions");
+                });
+            }
+
             var MODELS = {};
+
 
             MODELS.Default = {
                 _key: '',
@@ -281,7 +322,7 @@ function jsonSchemaDirective() {
 
             $scope.convertObj2Schema = function () {
                 var schema = obj2JsonString($scope.$data);
-                $scope.$schema = JSON.stringify(schema, null, '\t');
+                $scope.$schema = JSON.stringify(schema, null, 4);
             };
 
             function obj2JsonString(entity) {

@@ -290,7 +290,7 @@ function jsonSchemaDirective() {
 
             $scope.convertObj2Schema = function () {
                 var schema = obj2JsonString($scope.$data);
-                $scope.$schema = JSON.stringify(schema, null, '\t');
+                $scope.$schema = JSON.stringify(schema, null, 4);
             };
 
             function obj2JsonString(entity) {

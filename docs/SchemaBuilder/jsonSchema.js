@@ -10,11 +10,11 @@ function jsonSchemaDataService($http) {
     var config = {};
 
     function upload(data) {
-        return $http.post('http://localhost:8000/schema/update', data, config);
+        return $http.post('/schema/update', data, config);
     }
 
     function download(data) {
-        return $http.get('http://localhost:8000/schema', data);
+        return $http.get('/schema', data);
     }
 
     return {

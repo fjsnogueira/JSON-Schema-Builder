@@ -133,6 +133,189 @@
                             <input type="text" class="form-control sm detail-ip" ng-model="entity._default" />
                         </div>
                     </div>
+                    <div class="form-group">
+                        <label class="control-label col-xs-2">Fake:</label>
+                        <div class="col-xs-9">
+                            <select class="form-control sm detail-ip" ng-model="entity._fake">
+                                <optgroup label="Address">
+                                    <option value="address.zipCode">zipCode</option> 
+                                    <option value="address.city">city</option>
+                                    <option value="address.cityPrefix">cityPrefix</option>
+                                    <option value="address.citySuffix">citySuffix</option>
+                                    <option value="address.streetName">streetName</option>
+                                    <option value="address.streetAddress">streetAddress</option>
+                                    <option value="address.streetSuffix">streetSuffix</option>
+                                    <option value="address.streetPrefix">streetPrefix</option>
+                                    <option value="address.secondaryAddress">secondaryAddress</option>
+                                    <option value="address.county">county</option>
+                                    <option value="address.country">country</option>
+                                    <option value="address.countryCode">countryCode</option>
+                                    <option value="address.state">state</option>
+                                    <option value="address.stateAbbr">stateAbbr</option>
+                                    <option value="address.latitude">latitude</option>
+                                    <option value="address.longitude">longitude</option>
+                                </optgroup>
+                                <optgroup label="Commerce">
+                                    <option value="commerce.color">color</option> 
+                                    <option value="commerce.department">department</option> 
+                                    <option value="commerce.productName">productName</option> 
+                                    <option value="commerce.price">price</option> 
+                                    <option value="commerce.productAdjective">productAdjective</option> 
+                                    <option value="commerce.productMaterial">productMaterial</option> 
+                                    <option value="commerce.product">product</option> 
+                                </optgroup>
+
+                                <optgroup label="company"> 
+                                    <option value="company.suffixes">suffixes</option> 
+                                    <option value="company.companyName">companyName</option> 
+                                    <option value="company.companySuffix">companySuffix</option> 
+                                    <option value="company.catchPhrase">catchPhrase</option> 
+                                    <option value="company.bs">bs</option> 
+                                    <option value="company.catchPhraseAdjective">catchPhraseAdjective</option> 
+                                    <option value="company.catchPhraseDescriptor">catchPhraseDescriptor</option> 
+                                    <option value="company.catchPhraseNoun">catchPhraseNoun</option> 
+                                    <option value="company.bsAdjective">bsAdjective</option> 
+                                    <option value="company.bsBuzz">bsBuzz</option> 
+                                    <option value="company.bsNoun">bsNoun</option> 
+                                </optgroup>
+                                <optgroup label="database"> 
+                                    <option value="database.column">column</option> 
+                                    <option value="database.type">type</option> 
+                                    <option value="database.collation">collation</option> 
+                                    <option value="database.engine">engine</option> 
+                                </optgroup>
+                                <optgroup label="date"> 
+                                    <option value="date.past">past</option> 
+                                    <option value="date.future">future</option> 
+                                    <option value="date.between">between</option> 
+                                    <option value="date.recent">recent</option> 
+                                    <option value="date.month">month</option> 
+                                    <option value="date.weekday">weekday</option> 
+                                </optgroup>
+                                <optgroup label="finance"> 
+                                    <option value="finance.account">account</option> 
+                                    <option value="finance.accountName">accountName</option> 
+                                    <option value="finance.mask">mask</option> 
+                                    <option value="finance.amount">amount</option> 
+                                    <option value="finance.transactionType">transactionType</option> 
+                                    <option value="finance.currencyCode">currencyCode</option> 
+                                    <option value="finance.currencyName">currencyName</option> 
+                                    <option value="finance.currencySymbol">currencySymbol</option> 
+                                    <option value="finance.bitcoinAddress">bitcoinAddress</option> 
+                                    <option value="finance.iban">iban</option> 
+                                    <option value="finance.bic">bic</option> 
+                                </optgroup>
+                                <optgroup label="hacker"> 
+                                    <option value="hacker.abbreviation">abbreviation</option> 
+                                    <option value="hacker.adjective">adjective</option> 
+                                    <option value="hacker.noun">noun</option> 
+                                    <option value="hacker.verb">verb</option> 
+                                    <option value="hacker.ingverb">ingverb</option> 
+                                    <option value="hacker.phrase">phrase</option> 
+                                </optgroup>
+                                <optgroup label="helpers"> 
+                                    <option value="helpers.randomize">randomize</option> 
+                                    <option value="helpers.slugify">slugify</option> 
+                                    <option value="helpers.replaceSymbolWithNumber">replaceSymbolWithNumber</option> 
+                                    <option value="helpers.replaceSymbols">replaceSymbols</option> 
+                                    <option value="helpers.shuffle">shuffle</option> 
+                                    <option value="helpers.mustache">mustache</option> 
+                                    <option value="helpers.createCard">createCard</option> 
+                                    <option value="helpers.contextualCard">contextualCard</option> 
+                                    <option value="helpers.userCard">userCard</option> 
+                                    <option value="helpers.createTransaction">createTransaction</option> 
+                                </optgroup>
+                                <optgroup label="image"> 
+                                    <option value="image.image">image</option> 
+                                    <option value="image.avatar">avatar</option> 
+                                    <option value="image.imageUrl">imageUrl</option> 
+                                    <option value="image.abstract">abstract</option> 
+                                    <option value="image.animals">animals</option> 
+                                    <option value="image.business">business</option> 
+                                    <option value="image.cats">cats</option> 
+                                    <option value="image.city">city</option> 
+                                    <option value="image.food">food</option> 
+                                    <option value="image.nightlife">nightlife</option> 
+                                    <option value="image.fashion">fashion</option> 
+                                    <option value="image.people">people</option> 
+                                    <option value="image.nature">nature</option> 
+                                    <option value="image.sports">sports</option> 
+                                    <option value="image.technics">technics</option> 
+                                    <option value="image.transport">transport</option> 
+                                    <option value="image.dataUri">dataUri</option> 
+                                </optgroup>
+                                <optgroup label="internet"> 
+                                    <option value="internet.avatar">avatar</option> 
+                                    <option value="internet.email">email</option> 
+                                    <option value="internet.exampleEmail">exampleEmail</option> 
+                                    <option value="internet.userName">userName</option> 
+                                    <option value="internet.protocol">protocol</option> 
+                                    <option value="internet.url">url</option> 
+                                    <option value="internet.domainName">domainName</option> 
+                                    <option value="internet.domainSuffix">domainSuffix</option> 
+                                    <option value="internet.domainWord">domainWord</option> 
+                                    <option value="internet.ip">ip</option> 
+                                    <option value="internet.ipv6">ipv6</option> 
+                                    <option value="internet.userAgent">userAgent</option> 
+                                    <option value="internet.color">color</option> 
+                                    <option value="internet.mac">mac</option> 
+                                    <option value="internet.password">password</option> 
+                                </optgroup>
+                                <optgroup label="lorem"> 
+                                    <option value="lorem.word">word</option> 
+                                    <option value="lorem.words">words</option> 
+                                    <option value="lorem.sentence">sentence</option> 
+                                    <option value="lorem.slug">slug</option> 
+                                    <option value="lorem.sentences">sentences</option> 
+                                    <option value="lorem.paragraph">paragraph</option> 
+                                    <option value="lorem.paragraphs">paragraphs</option> 
+                                    <option value="lorem.text">text</option> 
+                                    <option value="lorem.lines">lines</option> 
+                                </optgroup>
+                                <optgroup label="name"> 
+                                    <option value="name.firstName">firstName</option> 
+                                    <option value="name.lastName">lastName</option> 
+                                    <option value="name.findName">findName</option> 
+                                    <option value="name.jobTitle">jobTitle</option> 
+                                    <option value="name.prefix">prefix</option> 
+                                    <option value="name.suffix">suffix</option> 
+                                    <option value="name.title">title</option> 
+                                    <option value="name.jobDescriptor">jobDescriptor</option> 
+                                    <option value="name.jobArea">jobArea</option> 
+                                    <option value="name.jobType">jobType</option> 
+                                </optgroup>
+                                <optgroup label="phone"> 
+                                    <option value="phoneNumber">phoneNumber      </option> 
+                                    <option value="phoneNumberFormat">phoneNumberFormat</option> 
+                                    <option value="phoneFormats">phoneFormats</option> 
+                                </optgroup>
+                                <optgroup label="phone"> 
+                                    <option value="phone.number">number</option> 
+                                    <option value="phone.arrayElement">arrayElement</option> 
+                                    <option value="phone.objectElement">objectElement</option> 
+                                    <option value="phone.uuid">uuid</option> 
+                                    <option value="phone.boolean">boolean</option> 
+                                    <option value="phone.word">word</option> 
+                                    <option value="phone.words">words</option> 
+                                    <option value="phone.image">image</option> 
+                                    <option value="phone.locale">locale</option> 
+                                    <option value="phone.alphaNumeric">alphaNumeric</option> 
+                                </optgroup>
+                                <optgroup label="system"> 
+                                    <option value="system.fileName">fileName</option> 
+                                    <option value="system.commonFileName">commonFileName</option> 
+                                    <option value="system.mimeType">mimeType</option> 
+                                    <option value="system.commonFileType">commonFileType</option> 
+                                    <option value="system.commonFileExt">commonFileExt</option> 
+                                    <option value="system.fileType">fileType</option> 
+                                    <option value="system.fileExt">fileExt</option> 
+                                    <option value="system.directoryPath">directoryPath</option> 
+                                    <option value="system.filePath">filePath</option> 
+                                    <option value="system.semver">semver</option> 
+                                </optgroup>
+                            </select>
+                        </div>
+                    </div>
                 </form>
                 </div>
             </div>
@@ -208,6 +391,190 @@
                             <input type="text" class="form-control sm detail-ip" ng-model="entity._default" />
                         </div>
                     </div>
+                    
+                    <div class="form-group">
+                        <label class="control-label col-xs-2">Fake:</label>
+                        <div class="col-xs-9">
+                            <select class="form-control sm detail-ip" ng-model="entity._fake">
+                                <optgroup label="Address">
+                                    <option value="address.zipCode">zipCode</option> 
+                                    <option value="address.city">city</option>
+                                    <option value="address.cityPrefix">cityPrefix</option>
+                                    <option value="address.citySuffix">citySuffix</option>
+                                    <option value="address.streetName">streetName</option>
+                                    <option value="address.streetAddress">streetAddress</option>
+                                    <option value="address.streetSuffix">streetSuffix</option>
+                                    <option value="address.streetPrefix">streetPrefix</option>
+                                    <option value="address.secondaryAddress">secondaryAddress</option>
+                                    <option value="address.county">county</option>
+                                    <option value="address.country">country</option>
+                                    <option value="address.countryCode">countryCode</option>
+                                    <option value="address.state">state</option>
+                                    <option value="address.stateAbbr">stateAbbr</option>
+                                    <option value="address.latitude">latitude</option>
+                                    <option value="address.longitude">longitude</option>
+                                </optgroup>
+                                <optgroup label="Commerce">
+                                    <option value="commerce.color">color</option> 
+                                    <option value="commerce.department">department</option> 
+                                    <option value="commerce.productName">productName</option> 
+                                    <option value="commerce.price">price</option> 
+                                    <option value="commerce.productAdjective">productAdjective</option> 
+                                    <option value="commerce.productMaterial">productMaterial</option> 
+                                    <option value="commerce.product">product</option> 
+                                </optgroup>
+
+                                <optgroup label="company"> 
+                                    <option value="company.suffixes">suffixes</option> 
+                                    <option value="company.companyName">companyName</option> 
+                                    <option value="company.companySuffix">companySuffix</option> 
+                                    <option value="company.catchPhrase">catchPhrase</option> 
+                                    <option value="company.bs">bs</option> 
+                                    <option value="company.catchPhraseAdjective">catchPhraseAdjective</option> 
+                                    <option value="company.catchPhraseDescriptor">catchPhraseDescriptor</option> 
+                                    <option value="company.catchPhraseNoun">catchPhraseNoun</option> 
+                                    <option value="company.bsAdjective">bsAdjective</option> 
+                                    <option value="company.bsBuzz">bsBuzz</option> 
+                                    <option value="company.bsNoun">bsNoun</option> 
+                                </optgroup>
+                                <optgroup label="database"> 
+                                    <option value="database.column">column</option> 
+                                    <option value="database.type">type</option> 
+                                    <option value="database.collation">collation</option> 
+                                    <option value="database.engine">engine</option> 
+                                </optgroup>
+                                <optgroup label="date"> 
+                                    <option value="date.past">past</option> 
+                                    <option value="date.future">future</option> 
+                                    <option value="date.between">between</option> 
+                                    <option value="date.recent">recent</option> 
+                                    <option value="date.month">month</option> 
+                                    <option value="date.weekday">weekday</option> 
+                                </optgroup>
+                                <optgroup label="finance"> 
+                                    <option value="finance.account">account</option> 
+                                    <option value="finance.accountName">accountName</option> 
+                                    <option value="finance.mask">mask</option> 
+                                    <option value="finance.amount">amount</option> 
+                                    <option value="finance.transactionType">transactionType</option> 
+                                    <option value="finance.currencyCode">currencyCode</option> 
+                                    <option value="finance.currencyName">currencyName</option> 
+                                    <option value="finance.currencySymbol">currencySymbol</option> 
+                                    <option value="finance.bitcoinAddress">bitcoinAddress</option> 
+                                    <option value="finance.iban">iban</option> 
+                                    <option value="finance.bic">bic</option> 
+                                </optgroup>
+                                <optgroup label="hacker"> 
+                                    <option value="hacker.abbreviation">abbreviation</option> 
+                                    <option value="hacker.adjective">adjective</option> 
+                                    <option value="hacker.noun">noun</option> 
+                                    <option value="hacker.verb">verb</option> 
+                                    <option value="hacker.ingverb">ingverb</option> 
+                                    <option value="hacker.phrase">phrase</option> 
+                                </optgroup>
+                                <optgroup label="helpers"> 
+                                    <option value="helpers.randomize">randomize</option> 
+                                    <option value="helpers.slugify">slugify</option> 
+                                    <option value="helpers.replaceSymbolWithNumber">replaceSymbolWithNumber</option> 
+                                    <option value="helpers.replaceSymbols">replaceSymbols</option> 
+                                    <option value="helpers.shuffle">shuffle</option> 
+                                    <option value="helpers.mustache">mustache</option> 
+                                    <option value="helpers.createCard">createCard</option> 
+                                    <option value="helpers.contextualCard">contextualCard</option> 
+                                    <option value="helpers.userCard">userCard</option> 
+                                    <option value="helpers.createTransaction">createTransaction</option> 
+                                </optgroup>
+                                <optgroup label="image"> 
+                                    <option value="image.image">image</option> 
+                                    <option value="image.avatar">avatar</option> 
+                                    <option value="image.imageUrl">imageUrl</option> 
+                                    <option value="image.abstract">abstract</option> 
+                                    <option value="image.animals">animals</option> 
+                                    <option value="image.business">business</option> 
+                                    <option value="image.cats">cats</option> 
+                                    <option value="image.city">city</option> 
+                                    <option value="image.food">food</option> 
+                                    <option value="image.nightlife">nightlife</option> 
+                                    <option value="image.fashion">fashion</option> 
+                                    <option value="image.people">people</option> 
+                                    <option value="image.nature">nature</option> 
+                                    <option value="image.sports">sports</option> 
+                                    <option value="image.technics">technics</option> 
+                                    <option value="image.transport">transport</option> 
+                                    <option value="image.dataUri">dataUri</option> 
+                                </optgroup>
+                                <optgroup label="internet"> 
+                                    <option value="internet.avatar">avatar</option> 
+                                    <option value="internet.email">email</option> 
+                                    <option value="internet.exampleEmail">exampleEmail</option> 
+                                    <option value="internet.userName">userName</option> 
+                                    <option value="internet.protocol">protocol</option> 
+                                    <option value="internet.url">url</option> 
+                                    <option value="internet.domainName">domainName</option> 
+                                    <option value="internet.domainSuffix">domainSuffix</option> 
+                                    <option value="internet.domainWord">domainWord</option> 
+                                    <option value="internet.ip">ip</option> 
+                                    <option value="internet.ipv6">ipv6</option> 
+                                    <option value="internet.userAgent">userAgent</option> 
+                                    <option value="internet.color">color</option> 
+                                    <option value="internet.mac">mac</option> 
+                                    <option value="internet.password">password</option> 
+                                </optgroup>
+                                <optgroup label="lorem"> 
+                                    <option value="lorem.word">word</option> 
+                                    <option value="lorem.words">words</option> 
+                                    <option value="lorem.sentence">sentence</option> 
+                                    <option value="lorem.slug">slug</option> 
+                                    <option value="lorem.sentences">sentences</option> 
+                                    <option value="lorem.paragraph">paragraph</option> 
+                                    <option value="lorem.paragraphs">paragraphs</option> 
+                                    <option value="lorem.text">text</option> 
+                                    <option value="lorem.lines">lines</option> 
+                                </optgroup>
+                                <optgroup label="name"> 
+                                    <option value="name.firstName">firstName</option> 
+                                    <option value="name.lastName">lastName</option> 
+                                    <option value="name.findName">findName</option> 
+                                    <option value="name.jobTitle">jobTitle</option> 
+                                    <option value="name.prefix">prefix</option> 
+                                    <option value="name.suffix">suffix</option> 
+                                    <option value="name.title">title</option> 
+                                    <option value="name.jobDescriptor">jobDescriptor</option> 
+                                    <option value="name.jobArea">jobArea</option> 
+                                    <option value="name.jobType">jobType</option> 
+                                </optgroup>
+                                <optgroup label="phone"> 
+                                    <option value="phoneNumber">phoneNumber      </option> 
+                                    <option value="phoneNumberFormat">phoneNumberFormat</option> 
+                                    <option value="phoneFormats">phoneFormats</option> 
+                                </optgroup>
+                                <optgroup label="phone"> 
+                                    <option value="phone.number">number</option> 
+                                    <option value="phone.arrayElement">arrayElement</option> 
+                                    <option value="phone.objectElement">objectElement</option> 
+                                    <option value="phone.uuid">uuid</option> 
+                                    <option value="phone.boolean">boolean</option> 
+                                    <option value="phone.word">word</option> 
+                                    <option value="phone.words">words</option> 
+                                    <option value="phone.image">image</option> 
+                                    <option value="phone.locale">locale</option> 
+                                    <option value="phone.alphaNumeric">alphaNumeric</option> 
+                                </optgroup>
+                                <optgroup label="system"> 
+                                    <option value="system.fileName">fileName</option> 
+                                    <option value="system.commonFileName">commonFileName</option> 
+                                    <option value="system.mimeType">mimeType</option> 
+                                    <option value="system.commonFileType">commonFileType</option> 
+                                    <option value="system.commonFileExt">commonFileExt</option> 
+                                    <option value="system.fileType">fileType</option> 
+                                    <option value="system.fileExt">fileExt</option> 
+                                    <option value="system.directoryPath">directoryPath</option> 
+                                    <option value="system.filePath">filePath</option> 
+                                    <option value="system.semver">semver</option> 
+                                </optgroup>
+                            </select>
+                        </div>
+                    </div>
                 </form>
                 </div>
             </div>
@@ -276,7 +643,190 @@
                             </select>
                         </div>
                     </div>
-                </div>
+                    
+                    <div class="form-group">
+                        <label class="control-label col-xs-2">Fake:</label>
+                        <div class="col-xs-9">
+                            <select class="form-control sm detail-ip" ng-model="entity._fake">
+                                <optgroup label="Address">
+                                    <option value="address.zipCode">zipCode</option> 
+                                    <option value="address.city">city</option>
+                                    <option value="address.cityPrefix">cityPrefix</option>
+                                    <option value="address.citySuffix">citySuffix</option>
+                                    <option value="address.streetName">streetName</option>
+                                    <option value="address.streetAddress">streetAddress</option>
+                                    <option value="address.streetSuffix">streetSuffix</option>
+                                    <option value="address.streetPrefix">streetPrefix</option>
+                                    <option value="address.secondaryAddress">secondaryAddress</option>
+                                    <option value="address.county">county</option>
+                                    <option value="address.country">country</option>
+                                    <option value="address.countryCode">countryCode</option>
+                                    <option value="address.state">state</option>
+                                    <option value="address.stateAbbr">stateAbbr</option>
+                                    <option value="address.latitude">latitude</option>
+                                    <option value="address.longitude">longitude</option>
+                                </optgroup>
+                                <optgroup label="Commerce">
+                                    <option value="commerce.color">color</option> 
+                                    <option value="commerce.department">department</option> 
+                                    <option value="commerce.productName">productName</option> 
+                                    <option value="commerce.price">price</option> 
+                                    <option value="commerce.productAdjective">productAdjective</option> 
+                                    <option value="commerce.productMaterial">productMaterial</option> 
+                                    <option value="commerce.product">product</option> 
+                                </optgroup>
+
+                                <optgroup label="company"> 
+                                    <option value="company.suffixes">suffixes</option> 
+                                    <option value="company.companyName">companyName</option> 
+                                    <option value="company.companySuffix">companySuffix</option> 
+                                    <option value="company.catchPhrase">catchPhrase</option> 
+                                    <option value="company.bs">bs</option> 
+                                    <option value="company.catchPhraseAdjective">catchPhraseAdjective</option> 
+                                    <option value="company.catchPhraseDescriptor">catchPhraseDescriptor</option> 
+                                    <option value="company.catchPhraseNoun">catchPhraseNoun</option> 
+                                    <option value="company.bsAdjective">bsAdjective</option> 
+                                    <option value="company.bsBuzz">bsBuzz</option> 
+                                    <option value="company.bsNoun">bsNoun</option> 
+                                </optgroup>
+                                <optgroup label="database"> 
+                                    <option value="database.column">column</option> 
+                                    <option value="database.type">type</option> 
+                                    <option value="database.collation">collation</option> 
+                                    <option value="database.engine">engine</option> 
+                                </optgroup>
+                                <optgroup label="date"> 
+                                    <option value="date.past">past</option> 
+                                    <option value="date.future">future</option> 
+                                    <option value="date.between">between</option> 
+                                    <option value="date.recent">recent</option> 
+                                    <option value="date.month">month</option> 
+                                    <option value="date.weekday">weekday</option> 
+                                </optgroup>
+                                <optgroup label="finance"> 
+                                    <option value="finance.account">account</option> 
+                                    <option value="finance.accountName">accountName</option> 
+                                    <option value="finance.mask">mask</option> 
+                                    <option value="finance.amount">amount</option> 
+                                    <option value="finance.transactionType">transactionType</option> 
+                                    <option value="finance.currencyCode">currencyCode</option> 
+                                    <option value="finance.currencyName">currencyName</option> 
+                                    <option value="finance.currencySymbol">currencySymbol</option> 
+                                    <option value="finance.bitcoinAddress">bitcoinAddress</option> 
+                                    <option value="finance.iban">iban</option> 
+                                    <option value="finance.bic">bic</option> 
+                                </optgroup>
+                                <optgroup label="hacker"> 
+                                    <option value="hacker.abbreviation">abbreviation</option> 
+                                    <option value="hacker.adjective">adjective</option> 
+                                    <option value="hacker.noun">noun</option> 
+                                    <option value="hacker.verb">verb</option> 
+                                    <option value="hacker.ingverb">ingverb</option> 
+                                    <option value="hacker.phrase">phrase</option> 
+                                </optgroup>
+                                <optgroup label="helpers"> 
+                                    <option value="helpers.randomize">randomize</option> 
+                                    <option value="helpers.slugify">slugify</option> 
+                                    <option value="helpers.replaceSymbolWithNumber">replaceSymbolWithNumber</option> 
+                                    <option value="helpers.replaceSymbols">replaceSymbols</option> 
+                                    <option value="helpers.shuffle">shuffle</option> 
+                                    <option value="helpers.mustache">mustache</option> 
+                                    <option value="helpers.createCard">createCard</option> 
+                                    <option value="helpers.contextualCard">contextualCard</option> 
+                                    <option value="helpers.userCard">userCard</option> 
+                                    <option value="helpers.createTransaction">createTransaction</option> 
+                                </optgroup>
+                                <optgroup label="image"> 
+                                    <option value="image.image">image</option> 
+                                    <option value="image.avatar">avatar</option> 
+                                    <option value="image.imageUrl">imageUrl</option> 
+                                    <option value="image.abstract">abstract</option> 
+                                    <option value="image.animals">animals</option> 
+                                    <option value="image.business">business</option> 
+                                    <option value="image.cats">cats</option> 
+                                    <option value="image.city">city</option> 
+                                    <option value="image.food">food</option> 
+                                    <option value="image.nightlife">nightlife</option> 
+                                    <option value="image.fashion">fashion</option> 
+                                    <option value="image.people">people</option> 
+                                    <option value="image.nature">nature</option> 
+                                    <option value="image.sports">sports</option> 
+                                    <option value="image.technics">technics</option> 
+                                    <option value="image.transport">transport</option> 
+                                    <option value="image.dataUri">dataUri</option> 
+                                </optgroup>
+                                <optgroup label="internet"> 
+                                    <option value="internet.avatar">avatar</option> 
+                                    <option value="internet.email">email</option> 
+                                    <option value="internet.exampleEmail">exampleEmail</option> 
+                                    <option value="internet.userName">userName</option> 
+                                    <option value="internet.protocol">protocol</option> 
+                                    <option value="internet.url">url</option> 
+                                    <option value="internet.domainName">domainName</option> 
+                                    <option value="internet.domainSuffix">domainSuffix</option> 
+                                    <option value="internet.domainWord">domainWord</option> 
+                                    <option value="internet.ip">ip</option> 
+                                    <option value="internet.ipv6">ipv6</option> 
+                                    <option value="internet.userAgent">userAgent</option> 
+                                    <option value="internet.color">color</option> 
+                                    <option value="internet.mac">mac</option> 
+                                    <option value="internet.password">password</option> 
+                                </optgroup>
+                                <optgroup label="lorem"> 
+                                    <option value="lorem.word">word</option> 
+                                    <option value="lorem.words">words</option> 
+                                    <option value="lorem.sentence">sentence</option> 
+                                    <option value="lorem.slug">slug</option> 
+                                    <option value="lorem.sentences">sentences</option> 
+                                    <option value="lorem.paragraph">paragraph</option> 
+                                    <option value="lorem.paragraphs">paragraphs</option> 
+                                    <option value="lorem.text">text</option> 
+                                    <option value="lorem.lines">lines</option> 
+                                </optgroup>
+                                <optgroup label="name"> 
+                                    <option value="name.firstName">firstName</option> 
+                                    <option value="name.lastName">lastName</option> 
+                                    <option value="name.findName">findName</option> 
+                                    <option value="name.jobTitle">jobTitle</option> 
+                                    <option value="name.prefix">prefix</option> 
+                                    <option value="name.suffix">suffix</option> 
+                                    <option value="name.title">title</option> 
+                                    <option value="name.jobDescriptor">jobDescriptor</option> 
+                                    <option value="name.jobArea">jobArea</option> 
+                                    <option value="name.jobType">jobType</option> 
+                                </optgroup>
+                                <optgroup label="phone"> 
+                                    <option value="phoneNumber">phoneNumber      </option> 
+                                    <option value="phoneNumberFormat">phoneNumberFormat</option> 
+                                    <option value="phoneFormats">phoneFormats</option> 
+                                </optgroup>
+                                <optgroup label="phone"> 
+                                    <option value="phone.number">number</option> 
+                                    <option value="phone.arrayElement">arrayElement</option> 
+                                    <option value="phone.objectElement">objectElement</option> 
+                                    <option value="phone.uuid">uuid</option> 
+                                    <option value="phone.boolean">boolean</option> 
+                                    <option value="phone.word">word</option> 
+                                    <option value="phone.words">words</option> 
+                                    <option value="phone.image">image</option> 
+                                    <option value="phone.locale">locale</option> 
+                                    <option value="phone.alphaNumeric">alphaNumeric</option> 
+                                </optgroup>
+                                <optgroup label="system"> 
+                                    <option value="system.fileName">fileName</option> 
+                                    <option value="system.commonFileName">commonFileName</option> 
+                                    <option value="system.mimeType">mimeType</option> 
+                                    <option value="system.commonFileType">commonFileType</option> 
+                                    <option value="system.commonFileExt">commonFileExt</option> 
+                                    <option value="system.fileType">fileType</option> 
+                                    <option value="system.fileExt">fileExt</option> 
+                                    <option value="system.directoryPath">directoryPath</option> 
+                                    <option value="system.filePath">filePath</option> 
+                                    <option value="system.semver">semver</option> 
+                                </optgroup>
+                            </select>
+                        </div>
+                    </div>
             </div>
             <div class="col-xs-6">
                 <div class="t_color bold">Validations</div>
@@ -324,6 +874,190 @@
                         <label class="control-label col-xs-2">Default:</label>
                         <div class="col-xs-9">
                             <input type="number" class="form-control sm detail-ip" ng-model="entity._default" />
+                        </div>
+                    </div>
+                   
+                    <div class="form-group">
+                        <label class="control-label col-xs-2">Fake:</label>
+                        <div class="col-xs-9">
+                            <select class="form-control sm detail-ip" ng-model="entity._fake">
+                                <optgroup label="Address">
+                                    <option value="address.zipCode">zipCode</option> 
+                                    <option value="address.city">city</option>
+                                    <option value="address.cityPrefix">cityPrefix</option>
+                                    <option value="address.citySuffix">citySuffix</option>
+                                    <option value="address.streetName">streetName</option>
+                                    <option value="address.streetAddress">streetAddress</option>
+                                    <option value="address.streetSuffix">streetSuffix</option>
+                                    <option value="address.streetPrefix">streetPrefix</option>
+                                    <option value="address.secondaryAddress">secondaryAddress</option>
+                                    <option value="address.county">county</option>
+                                    <option value="address.country">country</option>
+                                    <option value="address.countryCode">countryCode</option>
+                                    <option value="address.state">state</option>
+                                    <option value="address.stateAbbr">stateAbbr</option>
+                                    <option value="address.latitude">latitude</option>
+                                    <option value="address.longitude">longitude</option>
+                                </optgroup>
+                                <optgroup label="Commerce">
+                                    <option value="commerce.color">color</option> 
+                                    <option value="commerce.department">department</option> 
+                                    <option value="commerce.productName">productName</option> 
+                                    <option value="commerce.price">price</option> 
+                                    <option value="commerce.productAdjective">productAdjective</option> 
+                                    <option value="commerce.productMaterial">productMaterial</option> 
+                                    <option value="commerce.product">product</option> 
+                                </optgroup>
+
+                                <optgroup label="company"> 
+                                    <option value="company.suffixes">suffixes</option> 
+                                    <option value="company.companyName">companyName</option> 
+                                    <option value="company.companySuffix">companySuffix</option> 
+                                    <option value="company.catchPhrase">catchPhrase</option> 
+                                    <option value="company.bs">bs</option> 
+                                    <option value="company.catchPhraseAdjective">catchPhraseAdjective</option> 
+                                    <option value="company.catchPhraseDescriptor">catchPhraseDescriptor</option> 
+                                    <option value="company.catchPhraseNoun">catchPhraseNoun</option> 
+                                    <option value="company.bsAdjective">bsAdjective</option> 
+                                    <option value="company.bsBuzz">bsBuzz</option> 
+                                    <option value="company.bsNoun">bsNoun</option> 
+                                </optgroup>
+                                <optgroup label="database"> 
+                                    <option value="database.column">column</option> 
+                                    <option value="database.type">type</option> 
+                                    <option value="database.collation">collation</option> 
+                                    <option value="database.engine">engine</option> 
+                                </optgroup>
+                                <optgroup label="date"> 
+                                    <option value="date.past">past</option> 
+                                    <option value="date.future">future</option> 
+                                    <option value="date.between">between</option> 
+                                    <option value="date.recent">recent</option> 
+                                    <option value="date.month">month</option> 
+                                    <option value="date.weekday">weekday</option> 
+                                </optgroup>
+                                <optgroup label="finance"> 
+                                    <option value="finance.account">account</option> 
+                                    <option value="finance.accountName">accountName</option> 
+                                    <option value="finance.mask">mask</option> 
+                                    <option value="finance.amount">amount</option> 
+                                    <option value="finance.transactionType">transactionType</option> 
+                                    <option value="finance.currencyCode">currencyCode</option> 
+                                    <option value="finance.currencyName">currencyName</option> 
+                                    <option value="finance.currencySymbol">currencySymbol</option> 
+                                    <option value="finance.bitcoinAddress">bitcoinAddress</option> 
+                                    <option value="finance.iban">iban</option> 
+                                    <option value="finance.bic">bic</option> 
+                                </optgroup>
+                                <optgroup label="hacker"> 
+                                    <option value="hacker.abbreviation">abbreviation</option> 
+                                    <option value="hacker.adjective">adjective</option> 
+                                    <option value="hacker.noun">noun</option> 
+                                    <option value="hacker.verb">verb</option> 
+                                    <option value="hacker.ingverb">ingverb</option> 
+                                    <option value="hacker.phrase">phrase</option> 
+                                </optgroup>
+                                <optgroup label="helpers"> 
+                                    <option value="helpers.randomize">randomize</option> 
+                                    <option value="helpers.slugify">slugify</option> 
+                                    <option value="helpers.replaceSymbolWithNumber">replaceSymbolWithNumber</option> 
+                                    <option value="helpers.replaceSymbols">replaceSymbols</option> 
+                                    <option value="helpers.shuffle">shuffle</option> 
+                                    <option value="helpers.mustache">mustache</option> 
+                                    <option value="helpers.createCard">createCard</option> 
+                                    <option value="helpers.contextualCard">contextualCard</option> 
+                                    <option value="helpers.userCard">userCard</option> 
+                                    <option value="helpers.createTransaction">createTransaction</option> 
+                                </optgroup>
+                                <optgroup label="image"> 
+                                    <option value="image.image">image</option> 
+                                    <option value="image.avatar">avatar</option> 
+                                    <option value="image.imageUrl">imageUrl</option> 
+                                    <option value="image.abstract">abstract</option> 
+                                    <option value="image.animals">animals</option> 
+                                    <option value="image.business">business</option> 
+                                    <option value="image.cats">cats</option> 
+                                    <option value="image.city">city</option> 
+                                    <option value="image.food">food</option> 
+                                    <option value="image.nightlife">nightlife</option> 
+                                    <option value="image.fashion">fashion</option> 
+                                    <option value="image.people">people</option> 
+                                    <option value="image.nature">nature</option> 
+                                    <option value="image.sports">sports</option> 
+                                    <option value="image.technics">technics</option> 
+                                    <option value="image.transport">transport</option> 
+                                    <option value="image.dataUri">dataUri</option> 
+                                </optgroup>
+                                <optgroup label="internet"> 
+                                    <option value="internet.avatar">avatar</option> 
+                                    <option value="internet.email">email</option> 
+                                    <option value="internet.exampleEmail">exampleEmail</option> 
+                                    <option value="internet.userName">userName</option> 
+                                    <option value="internet.protocol">protocol</option> 
+                                    <option value="internet.url">url</option> 
+                                    <option value="internet.domainName">domainName</option> 
+                                    <option value="internet.domainSuffix">domainSuffix</option> 
+                                    <option value="internet.domainWord">domainWord</option> 
+                                    <option value="internet.ip">ip</option> 
+                                    <option value="internet.ipv6">ipv6</option> 
+                                    <option value="internet.userAgent">userAgent</option> 
+                                    <option value="internet.color">color</option> 
+                                    <option value="internet.mac">mac</option> 
+                                    <option value="internet.password">password</option> 
+                                </optgroup>
+                                <optgroup label="lorem"> 
+                                    <option value="lorem.word">word</option> 
+                                    <option value="lorem.words">words</option> 
+                                    <option value="lorem.sentence">sentence</option> 
+                                    <option value="lorem.slug">slug</option> 
+                                    <option value="lorem.sentences">sentences</option> 
+                                    <option value="lorem.paragraph">paragraph</option> 
+                                    <option value="lorem.paragraphs">paragraphs</option> 
+                                    <option value="lorem.text">text</option> 
+                                    <option value="lorem.lines">lines</option> 
+                                </optgroup>
+                                <optgroup label="name"> 
+                                    <option value="name.firstName">firstName</option> 
+                                    <option value="name.lastName">lastName</option> 
+                                    <option value="name.findName">findName</option> 
+                                    <option value="name.jobTitle">jobTitle</option> 
+                                    <option value="name.prefix">prefix</option> 
+                                    <option value="name.suffix">suffix</option> 
+                                    <option value="name.title">title</option> 
+                                    <option value="name.jobDescriptor">jobDescriptor</option> 
+                                    <option value="name.jobArea">jobArea</option> 
+                                    <option value="name.jobType">jobType</option> 
+                                </optgroup>
+                                <optgroup label="phone"> 
+                                    <option value="phoneNumber">phoneNumber      </option> 
+                                    <option value="phoneNumberFormat">phoneNumberFormat</option> 
+                                    <option value="phoneFormats">phoneFormats</option> 
+                                </optgroup>
+                                <optgroup label="phone"> 
+                                    <option value="phone.number">number</option> 
+                                    <option value="phone.arrayElement">arrayElement</option> 
+                                    <option value="phone.objectElement">objectElement</option> 
+                                    <option value="phone.uuid">uuid</option> 
+                                    <option value="phone.boolean">boolean</option> 
+                                    <option value="phone.word">word</option> 
+                                    <option value="phone.words">words</option> 
+                                    <option value="phone.image">image</option> 
+                                    <option value="phone.locale">locale</option> 
+                                    <option value="phone.alphaNumeric">alphaNumeric</option> 
+                                </optgroup>
+                                <optgroup label="system"> 
+                                    <option value="system.fileName">fileName</option> 
+                                    <option value="system.commonFileName">commonFileName</option> 
+                                    <option value="system.mimeType">mimeType</option> 
+                                    <option value="system.commonFileType">commonFileType</option> 
+                                    <option value="system.commonFileExt">commonFileExt</option> 
+                                    <option value="system.fileType">fileType</option> 
+                                    <option value="system.fileExt">fileExt</option> 
+                                    <option value="system.directoryPath">directoryPath</option> 
+                                    <option value="system.filePath">filePath</option> 
+                                    <option value="system.semver">semver</option> 
+                                </optgroup>
+                            </select>
                         </div>
                     </div>
                 </form>
@@ -399,6 +1133,190 @@
                             <input type="number" class="form-control sm detail-ip" ng-model="entity._default" />
                         </div>
                     </div>
+                    
+                    <div class="form-group">
+                        <label class="control-label col-xs-2">Fake:</label>
+                        <div class="col-xs-9">
+                            <select class="form-control sm detail-ip" ng-model="entity._fake">
+                                <optgroup label="Address">
+                                    <option value="address.zipCode">zipCode</option> 
+                                    <option value="address.city">city</option>
+                                    <option value="address.cityPrefix">cityPrefix</option>
+                                    <option value="address.citySuffix">citySuffix</option>
+                                    <option value="address.streetName">streetName</option>
+                                    <option value="address.streetAddress">streetAddress</option>
+                                    <option value="address.streetSuffix">streetSuffix</option>
+                                    <option value="address.streetPrefix">streetPrefix</option>
+                                    <option value="address.secondaryAddress">secondaryAddress</option>
+                                    <option value="address.county">county</option>
+                                    <option value="address.country">country</option>
+                                    <option value="address.countryCode">countryCode</option>
+                                    <option value="address.state">state</option>
+                                    <option value="address.stateAbbr">stateAbbr</option>
+                                    <option value="address.latitude">latitude</option>
+                                    <option value="address.longitude">longitude</option>
+                                </optgroup>
+                                <optgroup label="Commerce">
+                                    <option value="commerce.color">color</option> 
+                                    <option value="commerce.department">department</option> 
+                                    <option value="commerce.productName">productName</option> 
+                                    <option value="commerce.price">price</option> 
+                                    <option value="commerce.productAdjective">productAdjective</option> 
+                                    <option value="commerce.productMaterial">productMaterial</option> 
+                                    <option value="commerce.product">product</option> 
+                                </optgroup>
+
+                                <optgroup label="company"> 
+                                    <option value="company.suffixes">suffixes</option> 
+                                    <option value="company.companyName">companyName</option> 
+                                    <option value="company.companySuffix">companySuffix</option> 
+                                    <option value="company.catchPhrase">catchPhrase</option> 
+                                    <option value="company.bs">bs</option> 
+                                    <option value="company.catchPhraseAdjective">catchPhraseAdjective</option> 
+                                    <option value="company.catchPhraseDescriptor">catchPhraseDescriptor</option> 
+                                    <option value="company.catchPhraseNoun">catchPhraseNoun</option> 
+                                    <option value="company.bsAdjective">bsAdjective</option> 
+                                    <option value="company.bsBuzz">bsBuzz</option> 
+                                    <option value="company.bsNoun">bsNoun</option> 
+                                </optgroup>
+                                <optgroup label="database"> 
+                                    <option value="database.column">column</option> 
+                                    <option value="database.type">type</option> 
+                                    <option value="database.collation">collation</option> 
+                                    <option value="database.engine">engine</option> 
+                                </optgroup>
+                                <optgroup label="date"> 
+                                    <option value="date.past">past</option> 
+                                    <option value="date.future">future</option> 
+                                    <option value="date.between">between</option> 
+                                    <option value="date.recent">recent</option> 
+                                    <option value="date.month">month</option> 
+                                    <option value="date.weekday">weekday</option> 
+                                </optgroup>
+                                <optgroup label="finance"> 
+                                    <option value="finance.account">account</option> 
+                                    <option value="finance.accountName">accountName</option> 
+                                    <option value="finance.mask">mask</option> 
+                                    <option value="finance.amount">amount</option> 
+                                    <option value="finance.transactionType">transactionType</option> 
+                                    <option value="finance.currencyCode">currencyCode</option> 
+                                    <option value="finance.currencyName">currencyName</option> 
+                                    <option value="finance.currencySymbol">currencySymbol</option> 
+                                    <option value="finance.bitcoinAddress">bitcoinAddress</option> 
+                                    <option value="finance.iban">iban</option> 
+                                    <option value="finance.bic">bic</option> 
+                                </optgroup>
+                                <optgroup label="hacker"> 
+                                    <option value="hacker.abbreviation">abbreviation</option> 
+                                    <option value="hacker.adjective">adjective</option> 
+                                    <option value="hacker.noun">noun</option> 
+                                    <option value="hacker.verb">verb</option> 
+                                    <option value="hacker.ingverb">ingverb</option> 
+                                    <option value="hacker.phrase">phrase</option> 
+                                </optgroup>
+                                <optgroup label="helpers"> 
+                                    <option value="helpers.randomize">randomize</option> 
+                                    <option value="helpers.slugify">slugify</option> 
+                                    <option value="helpers.replaceSymbolWithNumber">replaceSymbolWithNumber</option> 
+                                    <option value="helpers.replaceSymbols">replaceSymbols</option> 
+                                    <option value="helpers.shuffle">shuffle</option> 
+                                    <option value="helpers.mustache">mustache</option> 
+                                    <option value="helpers.createCard">createCard</option> 
+                                    <option value="helpers.contextualCard">contextualCard</option> 
+                                    <option value="helpers.userCard">userCard</option> 
+                                    <option value="helpers.createTransaction">createTransaction</option> 
+                                </optgroup>
+                                <optgroup label="image"> 
+                                    <option value="image.image">image</option> 
+                                    <option value="image.avatar">avatar</option> 
+                                    <option value="image.imageUrl">imageUrl</option> 
+                                    <option value="image.abstract">abstract</option> 
+                                    <option value="image.animals">animals</option> 
+                                    <option value="image.business">business</option> 
+                                    <option value="image.cats">cats</option> 
+                                    <option value="image.city">city</option> 
+                                    <option value="image.food">food</option> 
+                                    <option value="image.nightlife">nightlife</option> 
+                                    <option value="image.fashion">fashion</option> 
+                                    <option value="image.people">people</option> 
+                                    <option value="image.nature">nature</option> 
+                                    <option value="image.sports">sports</option> 
+                                    <option value="image.technics">technics</option> 
+                                    <option value="image.transport">transport</option> 
+                                    <option value="image.dataUri">dataUri</option> 
+                                </optgroup>
+                                <optgroup label="internet"> 
+                                    <option value="internet.avatar">avatar</option> 
+                                    <option value="internet.email">email</option> 
+                                    <option value="internet.exampleEmail">exampleEmail</option> 
+                                    <option value="internet.userName">userName</option> 
+                                    <option value="internet.protocol">protocol</option> 
+                                    <option value="internet.url">url</option> 
+                                    <option value="internet.domainName">domainName</option> 
+                                    <option value="internet.domainSuffix">domainSuffix</option> 
+                                    <option value="internet.domainWord">domainWord</option> 
+                                    <option value="internet.ip">ip</option> 
+                                    <option value="internet.ipv6">ipv6</option> 
+                                    <option value="internet.userAgent">userAgent</option> 
+                                    <option value="internet.color">color</option> 
+                                    <option value="internet.mac">mac</option> 
+                                    <option value="internet.password">password</option> 
+                                </optgroup>
+                                <optgroup label="lorem"> 
+                                    <option value="lorem.word">word</option> 
+                                    <option value="lorem.words">words</option> 
+                                    <option value="lorem.sentence">sentence</option> 
+                                    <option value="lorem.slug">slug</option> 
+                                    <option value="lorem.sentences">sentences</option> 
+                                    <option value="lorem.paragraph">paragraph</option> 
+                                    <option value="lorem.paragraphs">paragraphs</option> 
+                                    <option value="lorem.text">text</option> 
+                                    <option value="lorem.lines">lines</option> 
+                                </optgroup>
+                                <optgroup label="name"> 
+                                    <option value="name.firstName">firstName</option> 
+                                    <option value="name.lastName">lastName</option> 
+                                    <option value="name.findName">findName</option> 
+                                    <option value="name.jobTitle">jobTitle</option> 
+                                    <option value="name.prefix">prefix</option> 
+                                    <option value="name.suffix">suffix</option> 
+                                    <option value="name.title">title</option> 
+                                    <option value="name.jobDescriptor">jobDescriptor</option> 
+                                    <option value="name.jobArea">jobArea</option> 
+                                    <option value="name.jobType">jobType</option> 
+                                </optgroup>
+                                <optgroup label="phone"> 
+                                    <option value="phoneNumber">phoneNumber      </option> 
+                                    <option value="phoneNumberFormat">phoneNumberFormat</option> 
+                                    <option value="phoneFormats">phoneFormats</option> 
+                                </optgroup>
+                                <optgroup label="phone"> 
+                                    <option value="phone.number">number</option> 
+                                    <option value="phone.arrayElement">arrayElement</option> 
+                                    <option value="phone.objectElement">objectElement</option> 
+                                    <option value="phone.uuid">uuid</option> 
+                                    <option value="phone.boolean">boolean</option> 
+                                    <option value="phone.word">word</option> 
+                                    <option value="phone.words">words</option> 
+                                    <option value="phone.image">image</option> 
+                                    <option value="phone.locale">locale</option> 
+                                    <option value="phone.alphaNumeric">alphaNumeric</option> 
+                                </optgroup>
+                                <optgroup label="system"> 
+                                    <option value="system.fileName">fileName</option> 
+                                    <option value="system.commonFileName">commonFileName</option> 
+                                    <option value="system.mimeType">mimeType</option> 
+                                    <option value="system.commonFileType">commonFileType</option> 
+                                    <option value="system.commonFileExt">commonFileExt</option> 
+                                    <option value="system.fileType">fileType</option> 
+                                    <option value="system.fileExt">fileExt</option> 
+                                    <option value="system.directoryPath">directoryPath</option> 
+                                    <option value="system.filePath">filePath</option> 
+                                    <option value="system.semver">semver</option> 
+                                </optgroup>
+                            </select>
+                        </div>
+                    </div>
                 </form>
                 </div>
             </div>
@@ -461,6 +1379,190 @@
                         <label class="control-label col-xs-2">Description:</label>
                         <div class="col-xs-9">
                             <textarea class="form-control" ng-model="entity._description"></textarea>
+                        </div>
+                    </div>
+                   
+                    <div class="form-group">
+                        <label class="control-label col-xs-2">Fake:</label>
+                        <div class="col-xs-9">
+                            <select class="form-control sm detail-ip" ng-model="entity._fake">
+                                <optgroup label="Address">
+                                    <option value="address.zipCode">zipCode</option> 
+                                    <option value="address.city">city</option>
+                                    <option value="address.cityPrefix">cityPrefix</option>
+                                    <option value="address.citySuffix">citySuffix</option>
+                                    <option value="address.streetName">streetName</option>
+                                    <option value="address.streetAddress">streetAddress</option>
+                                    <option value="address.streetSuffix">streetSuffix</option>
+                                    <option value="address.streetPrefix">streetPrefix</option>
+                                    <option value="address.secondaryAddress">secondaryAddress</option>
+                                    <option value="address.county">county</option>
+                                    <option value="address.country">country</option>
+                                    <option value="address.countryCode">countryCode</option>
+                                    <option value="address.state">state</option>
+                                    <option value="address.stateAbbr">stateAbbr</option>
+                                    <option value="address.latitude">latitude</option>
+                                    <option value="address.longitude">longitude</option>
+                                </optgroup>
+                                <optgroup label="Commerce">
+                                    <option value="commerce.color">color</option> 
+                                    <option value="commerce.department">department</option> 
+                                    <option value="commerce.productName">productName</option> 
+                                    <option value="commerce.price">price</option> 
+                                    <option value="commerce.productAdjective">productAdjective</option> 
+                                    <option value="commerce.productMaterial">productMaterial</option> 
+                                    <option value="commerce.product">product</option> 
+                                </optgroup>
+
+                                <optgroup label="company"> 
+                                    <option value="company.suffixes">suffixes</option> 
+                                    <option value="company.companyName">companyName</option> 
+                                    <option value="company.companySuffix">companySuffix</option> 
+                                    <option value="company.catchPhrase">catchPhrase</option> 
+                                    <option value="company.bs">bs</option> 
+                                    <option value="company.catchPhraseAdjective">catchPhraseAdjective</option> 
+                                    <option value="company.catchPhraseDescriptor">catchPhraseDescriptor</option> 
+                                    <option value="company.catchPhraseNoun">catchPhraseNoun</option> 
+                                    <option value="company.bsAdjective">bsAdjective</option> 
+                                    <option value="company.bsBuzz">bsBuzz</option> 
+                                    <option value="company.bsNoun">bsNoun</option> 
+                                </optgroup>
+                                <optgroup label="database"> 
+                                    <option value="database.column">column</option> 
+                                    <option value="database.type">type</option> 
+                                    <option value="database.collation">collation</option> 
+                                    <option value="database.engine">engine</option> 
+                                </optgroup>
+                                <optgroup label="date"> 
+                                    <option value="date.past">past</option> 
+                                    <option value="date.future">future</option> 
+                                    <option value="date.between">between</option> 
+                                    <option value="date.recent">recent</option> 
+                                    <option value="date.month">month</option> 
+                                    <option value="date.weekday">weekday</option> 
+                                </optgroup>
+                                <optgroup label="finance"> 
+                                    <option value="finance.account">account</option> 
+                                    <option value="finance.accountName">accountName</option> 
+                                    <option value="finance.mask">mask</option> 
+                                    <option value="finance.amount">amount</option> 
+                                    <option value="finance.transactionType">transactionType</option> 
+                                    <option value="finance.currencyCode">currencyCode</option> 
+                                    <option value="finance.currencyName">currencyName</option> 
+                                    <option value="finance.currencySymbol">currencySymbol</option> 
+                                    <option value="finance.bitcoinAddress">bitcoinAddress</option> 
+                                    <option value="finance.iban">iban</option> 
+                                    <option value="finance.bic">bic</option> 
+                                </optgroup>
+                                <optgroup label="hacker"> 
+                                    <option value="hacker.abbreviation">abbreviation</option> 
+                                    <option value="hacker.adjective">adjective</option> 
+                                    <option value="hacker.noun">noun</option> 
+                                    <option value="hacker.verb">verb</option> 
+                                    <option value="hacker.ingverb">ingverb</option> 
+                                    <option value="hacker.phrase">phrase</option> 
+                                </optgroup>
+                                <optgroup label="helpers"> 
+                                    <option value="helpers.randomize">randomize</option> 
+                                    <option value="helpers.slugify">slugify</option> 
+                                    <option value="helpers.replaceSymbolWithNumber">replaceSymbolWithNumber</option> 
+                                    <option value="helpers.replaceSymbols">replaceSymbols</option> 
+                                    <option value="helpers.shuffle">shuffle</option> 
+                                    <option value="helpers.mustache">mustache</option> 
+                                    <option value="helpers.createCard">createCard</option> 
+                                    <option value="helpers.contextualCard">contextualCard</option> 
+                                    <option value="helpers.userCard">userCard</option> 
+                                    <option value="helpers.createTransaction">createTransaction</option> 
+                                </optgroup>
+                                <optgroup label="image"> 
+                                    <option value="image.image">image</option> 
+                                    <option value="image.avatar">avatar</option> 
+                                    <option value="image.imageUrl">imageUrl</option> 
+                                    <option value="image.abstract">abstract</option> 
+                                    <option value="image.animals">animals</option> 
+                                    <option value="image.business">business</option> 
+                                    <option value="image.cats">cats</option> 
+                                    <option value="image.city">city</option> 
+                                    <option value="image.food">food</option> 
+                                    <option value="image.nightlife">nightlife</option> 
+                                    <option value="image.fashion">fashion</option> 
+                                    <option value="image.people">people</option> 
+                                    <option value="image.nature">nature</option> 
+                                    <option value="image.sports">sports</option> 
+                                    <option value="image.technics">technics</option> 
+                                    <option value="image.transport">transport</option> 
+                                    <option value="image.dataUri">dataUri</option> 
+                                </optgroup>
+                                <optgroup label="internet"> 
+                                    <option value="internet.avatar">avatar</option> 
+                                    <option value="internet.email">email</option> 
+                                    <option value="internet.exampleEmail">exampleEmail</option> 
+                                    <option value="internet.userName">userName</option> 
+                                    <option value="internet.protocol">protocol</option> 
+                                    <option value="internet.url">url</option> 
+                                    <option value="internet.domainName">domainName</option> 
+                                    <option value="internet.domainSuffix">domainSuffix</option> 
+                                    <option value="internet.domainWord">domainWord</option> 
+                                    <option value="internet.ip">ip</option> 
+                                    <option value="internet.ipv6">ipv6</option> 
+                                    <option value="internet.userAgent">userAgent</option> 
+                                    <option value="internet.color">color</option> 
+                                    <option value="internet.mac">mac</option> 
+                                    <option value="internet.password">password</option> 
+                                </optgroup>
+                                <optgroup label="lorem"> 
+                                    <option value="lorem.word">word</option> 
+                                    <option value="lorem.words">words</option> 
+                                    <option value="lorem.sentence">sentence</option> 
+                                    <option value="lorem.slug">slug</option> 
+                                    <option value="lorem.sentences">sentences</option> 
+                                    <option value="lorem.paragraph">paragraph</option> 
+                                    <option value="lorem.paragraphs">paragraphs</option> 
+                                    <option value="lorem.text">text</option> 
+                                    <option value="lorem.lines">lines</option> 
+                                </optgroup>
+                                <optgroup label="name"> 
+                                    <option value="name.firstName">firstName</option> 
+                                    <option value="name.lastName">lastName</option> 
+                                    <option value="name.findName">findName</option> 
+                                    <option value="name.jobTitle">jobTitle</option> 
+                                    <option value="name.prefix">prefix</option> 
+                                    <option value="name.suffix">suffix</option> 
+                                    <option value="name.title">title</option> 
+                                    <option value="name.jobDescriptor">jobDescriptor</option> 
+                                    <option value="name.jobArea">jobArea</option> 
+                                    <option value="name.jobType">jobType</option> 
+                                </optgroup>
+                                <optgroup label="phone"> 
+                                    <option value="phoneNumber">phoneNumber      </option> 
+                                    <option value="phoneNumberFormat">phoneNumberFormat</option> 
+                                    <option value="phoneFormats">phoneFormats</option> 
+                                </optgroup>
+                                <optgroup label="phone"> 
+                                    <option value="phone.number">number</option> 
+                                    <option value="phone.arrayElement">arrayElement</option> 
+                                    <option value="phone.objectElement">objectElement</option> 
+                                    <option value="phone.uuid">uuid</option> 
+                                    <option value="phone.boolean">boolean</option> 
+                                    <option value="phone.word">word</option> 
+                                    <option value="phone.words">words</option> 
+                                    <option value="phone.image">image</option> 
+                                    <option value="phone.locale">locale</option> 
+                                    <option value="phone.alphaNumeric">alphaNumeric</option> 
+                                </optgroup>
+                                <optgroup label="system"> 
+                                    <option value="system.fileName">fileName</option> 
+                                    <option value="system.commonFileName">commonFileName</option> 
+                                    <option value="system.mimeType">mimeType</option> 
+                                    <option value="system.commonFileType">commonFileType</option> 
+                                    <option value="system.commonFileExt">commonFileExt</option> 
+                                    <option value="system.fileType">fileType</option> 
+                                    <option value="system.fileExt">fileExt</option> 
+                                    <option value="system.directoryPath">directoryPath</option> 
+                                    <option value="system.filePath">filePath</option> 
+                                    <option value="system.semver">semver</option> 
+                                </optgroup>
+                            </select>
                         </div>
                     </div>
                 </form>

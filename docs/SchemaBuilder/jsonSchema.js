@@ -386,6 +386,9 @@ function jsonSchemaDirective(jsonSchemaDataService) {
                         if (entity._default) {
                             schema.default = entity._default;
                         }
+                        if (entity._fake) {
+                            schema.fake = entity._fake;
+                        }
                         break;
                     case 'Array':
                         schema.type = 'array';
@@ -406,6 +409,9 @@ function jsonSchemaDirective(jsonSchemaDataService) {
                         }
                         if (entity._items && entity._items[0]) {
                             schema.items = obj2JsonString(entity._items[0]);
+                        }
+                        if (entity._fake) {
+                            schema.fake = entity._fake;
                         }
                         break;
                     case 'Integer':
@@ -435,6 +441,9 @@ function jsonSchemaDirective(jsonSchemaDataService) {
                         if (entity._format) {
                             schema.format = entity._format;
                         }
+                        if (entity._fake) {
+                            schema.fake = entity._fake;
+                        }
                         break;
                     case 'Boolean':
                         schema.type = 'boolean';
@@ -444,6 +453,9 @@ function jsonSchemaDirective(jsonSchemaDataService) {
                         if (entity._default) {
                             schema.default = entity._default;
                         }
+                        if (entity._fake) {
+                            schema.fake = entity._fake;
+                        }
                         break;
                     case 'Null':
                         schema.type = 'null';
@@ -452,6 +464,9 @@ function jsonSchemaDirective(jsonSchemaDataService) {
                         }
                         if (entity._default) {
                             schema.default = entity._default;
+                        }
+                        if (entity._fake) {
+                            schema.fake = entity._fake;
                         }
                         break;
                 }

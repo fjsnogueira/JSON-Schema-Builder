@@ -35,7 +35,7 @@ function jsonSchemaDirective(jsonSchemaDataService) {
             $scope.updateSchema = function (schema) {
                 var payload = {
                     entity : $scope.$data,
-                    schema : schema
+                    schema : JSON.parse(schema)
                 }
                 jsonSchemaDataService.upload(payload).then(function () {
                     console.log("success to upload schema definitions");
